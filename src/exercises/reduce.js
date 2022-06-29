@@ -12,6 +12,4 @@ numbers.forEach(element => {
 
 //console.log(total)
 
-console.log(numbers.reduce(function (total, num){
-    return total + num
-}))
+console.log(numbers.reduce( (total, num) => total + num))

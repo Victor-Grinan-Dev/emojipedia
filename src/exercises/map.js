@@ -35,9 +35,7 @@ doubleNumbers = numbers.map(function (item){
 
 /**** step 3 transform the map in arrow function ****/
 doubleNumbers = [];
-doubleNumbers = numbers.map( item => (
-    item * 2
-));
+doubleNumbers = numbers.map( item => item * 2 );
 
 console.table(doubleNumbers);
 
