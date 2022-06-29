@@ -19,7 +19,22 @@
           "emoji": "🤣",
           "name": "Rolling On The Floor, Laughing",
           "meaning":
-            "This is funny! A smiley face, rolling on the floor, laughing. The face is laughing boundlessly. The emoji version of “rofl“. Stands for „rolling on the floor, laughing“."
+            "This is funny! A smiley face, rolling on the floor, laughing. The face is laughing boundlessly. The emoji version of “rofl“. Stands for „rolling on the floor, laughing."
+        },
+        {
+          "id": 4,
+          "emoji": "😀",
+          "name": "Grinning Face",
+          "meaning":
+            "Often conveys general pleasure and good cheer or humor."
+        },
+        {
+          "id": 5,
+          "emoji": "😄",
+          "name": "Grinning Face with Smiling Eyes",
+          "meaning":
+            "Often conveys general happiness and good-natured amusement.."
         }
       ]
 }
+

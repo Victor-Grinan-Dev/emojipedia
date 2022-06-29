@@ -19,20 +19,26 @@ function Emojipedia() {
     }, [])
   
   return (
-    <div>  
+    <div style={{
+        display: "flex",
+        flexDirection: "column"
+    }}>  
         <h1>"Emojipedia"</h1>
-        {emojipedia.map((item) => (
-            <Card
-                key={item.id}
-                emoji={item.emoji}
-                name={item.name}
-                meaning={item.meaning}
-            />
-         ))}
-          
-   
-
-      
+        <div className="displayCards"
+        style={{
+            display:"flex",
+            flexDirection: "row",
+            flexWrap: "wrap"
+        }}>
+            {emojipedia.map((item) => (
+                <Card
+                    key={item.id}
+                    emoji={item.emoji}
+                    name={item.name}
+                    meaning={item.meaning}
+                />
+            ))}
+        </div>
     </div>
   )
 }
