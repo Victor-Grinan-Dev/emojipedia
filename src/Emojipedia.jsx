@@ -2,20 +2,18 @@ import React from 'react';
 import axios from 'axios';
 import Card from './Card';
 import { useState, useEffect } from 'react';
+import meanings from './exercises/Challenge';
+
 
 const dbUrl = "http://localhost:8010/emojipedia";
 
 function Emojipedia() {
     const [emojipedia, setEmojipedia] = useState([])
 
-    const readData = () => {
+    useEffect(() => {
         axios.get(dbUrl).then( database => {
             setEmojipedia(database.data);
         })
-    }
-
-    useEffect(() => {
-        readData();
     }, [])
   
   return (
@@ -39,6 +37,7 @@ function Emojipedia() {
                 />
             ))}
         </div>
+       
     </div>
   )
 }
